@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMT Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IMT Calculator</h1>
+        <form id="imtForm">
+            <label for="height">Tinggi Badan (cm):</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi badan" required>
+            
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" id="weight" placeholder="Masukkan berat badan" required>
+            
+            <button type="button" onclick="calculateIMT()">Hitung IMT</button>
+        </form>
+        <div id="result" class="result"></div>
+        <div id="category" class="category"></div>
+        <div id="recommendation" class="recommendation"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
